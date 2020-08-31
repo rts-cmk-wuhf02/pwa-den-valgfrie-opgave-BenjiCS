@@ -1,0 +1,22 @@
+{
+    "name": "Gulp + PWA Template",
+    "short_name": "Gulp+PWATemplate",
+    "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",  
+    "start_url": "/index.html",
+    "background_color": "#F63232",
+    "theme_color": "#F63232",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "/assets/images/csgo-icon.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/assets/images/csgo-icon.ico",
+            "type": "image/png",
+            "sizes": "64x64"
+        }
+    ],
+    "orientation": "portrait-primary"
+}

@@ -1,0 +1,148 @@
+$headerBgColor: #000000;
+$headerBorderColor: #0000ff;
+$headerTextColor: #ffffff;
+$headerBurgerColor: #ffffff;
+
+.hidden {
+  display: none;
+}
+
+.header__sticky {
+  position: fixed;
+  top: 0;
+}
+
+.header {
+  width: 100%;
+  bottom: 0;
+  &__install{
+    position: relative  ;
+    z-index: 4;
+    top: 22px;
+    left: 30px;
+    border: none;
+    outline: none;
+    font-weight: 800;
+    background: #602AC1;
+    color: #ffffff;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+
+  &__nav {
+    background: $headerBgColor;
+    border-top: solid 2px $headerBorderColor;
+    border-bottom: solid 2px $headerBorderColor;
+    height: 5rem;
+    width: 100%;
+    position: relative;
+  }
+  &__ul {
+    margin: 0;
+    height: 5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    top: 5rem;
+    width: calc(100% - 5rem);
+  }
+  &__a {
+    text-decoration: none;
+    color: $headerTextColor;
+  }
+
+  &__conerLeft,
+  &__conerRight {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__conerLeft {
+    top: -1px;
+    left: 0;
+    border-width: 50px 50px 0 0;
+    border-color: $headerBorderColor transparent transparent transparent;
+  }
+
+  &__conerRight {
+    bottom: -1px;
+    right: 0;
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent $headerBorderColor transparent;
+  }
+
+  &__coners {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+
+    &__toggle {
+      position: absolute;
+      top: 50%;
+      height: 40px;
+      right: 0;
+      margin: 0;
+      border: none;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__toggle-icon {
+      width: 50px;
+      height: 6px;
+      background-color: $headerBurgerColor;
+      position: relative;
+    }
+
+    &__toggle-icon::before,
+    &__toggle-icon::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 6px;
+      background: $headerBurgerColor;
+    }
+
+    &__toggle-icon::before {
+      top: -16px;
+    }
+
+    &__toggle-icon::after {
+      top: 16px;
+    }
+
+    &__ul {
+      display: none;
+    }
+
+    &__show {
+      display: flex;
+      flex-direction: column;
+      background: $headerBorderColor;
+      padding: 0;
+      height: 300px;
+      width: 100%;
+      font-size: 20px;
+      position: relative;
+    }
+  }
+}

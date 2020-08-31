@@ -1,0 +1,34 @@
+{
+  "name": "gulptemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjiCS/gulptemplate.git"
+  },
+  "keywords": [],
+  "author": "Benjamin Hansen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjiCS/gulptemplate/issues"
+  },
+  "homepage": "https://github.com/BenjiCS/gulptemplate#readme",
+  "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel": "^6.23.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-ejs": "^4.1.2",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  }
+}
