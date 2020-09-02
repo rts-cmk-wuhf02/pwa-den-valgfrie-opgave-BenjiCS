@@ -16,7 +16,7 @@ $headerBurgerColor: #ffffff;
   width: 100%;
   bottom: 0;
   &__install{
-    position: relative  ;
+    position: fixed;
     z-index: 4;
     top: 22px;
     left: 30px;
@@ -39,7 +39,7 @@ $headerBurgerColor: #ffffff;
     border-bottom: solid 2px $headerBorderColor;
     height: 5rem;
     width: 100%;
-    position: relative;
+    // position: relative;
   }
   &__ul {
     margin: 0;
@@ -50,9 +50,6 @@ $headerBurgerColor: #ffffff;
     align-items: center;
     text-transform: uppercase;
     font-weight: 800;
-    position: absolute;
-    top: 5rem;
-    width: calc(100% - 5rem);
   }
   &__a {
     text-decoration: none;
@@ -89,7 +86,7 @@ $headerBurgerColor: #ffffff;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
 
     &__toggle {
@@ -132,6 +129,9 @@ $headerBurgerColor: #ffffff;
 
     &__ul {
       display: none;
+      position: absolute;
+      top: 5rem;
+      width: calc(100% - 5rem);
     }
 
     &__show {
