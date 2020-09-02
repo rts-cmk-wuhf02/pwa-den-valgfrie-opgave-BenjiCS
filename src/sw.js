@@ -31,10 +31,9 @@ self.addEventListener("install", function (event) {
 });
 
 self.addEventListener("activate", function (e) {
-  console.log("activate", e);
+  // console.log("activate", e);
   e.waitUntil(
     caches.keys().then(function (keys) {
-      console.log(keys, "test");
       if (e != cacheName) caches.delete(e);
       return Promise.all(
         keys.filter((key) => key !== cacheName).map((key) => caches.delete(key))
@@ -44,7 +43,7 @@ self.addEventListener("activate", function (e) {
 });
 
 self.addEventListener("fetch", function (event) {
-  console.log("fetch", event);
+  // console.log("fetch", event);
   event.respondWith(
     caches.open(cacheName).then(function (cache) {
       return cache
