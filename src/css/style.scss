@@ -1,8 +1,24 @@
 @import "base";
 body {
-    height: 200vh;
+  height: 200vh;
 }
 
 .main {
-    margin-top: 5rem;
+  margin-top: 6rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team {
+  margin: 20px;
+  width: calc(100vw - 80%);
+  &__Player-name,
+  &__Player-startDate,
+  &__Player-teamArea,
+  &__name {
+    font-size: 15px;
+  }
 }
