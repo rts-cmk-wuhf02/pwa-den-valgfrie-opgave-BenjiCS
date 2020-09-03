@@ -3,8 +3,8 @@
     "short_name": "Gulp+PWATemplate",
     "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",  
     "start_url": "/index.html",
-    "background_color": "#F63232",
-    "theme_color": "#F63232",
+    "background_color": "#303030",
+    "theme_color": "#303030",
     "display": "fullscreen",
     "icons": [
         {
