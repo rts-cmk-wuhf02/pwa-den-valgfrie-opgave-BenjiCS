@@ -1,0 +1,46 @@
+.teamPlayers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.team__player {
+  background: #777777;
+  // margin: 25px;
+  width: 100%;
+  display: flex;
+  margin: 1%;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.team__playerNr {
+    text-align: center;
+    color: #5a5a5a;
+    margin: 0 10px;
+    }
+
+.team__player-placeholder {
+  height: 200px;
+}
+
+.team__Player-span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.team__playerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .team__player {
+    width: 100%;
+}
+.team__player-placeholder {
+    height: 100px;
+  }
+}
