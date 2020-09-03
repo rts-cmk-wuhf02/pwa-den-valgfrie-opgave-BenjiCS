@@ -43,6 +43,7 @@ $headerBurgerColor: #ffffff;
   }
   &__ul {
     margin: 0;
+    margin-left: 5rem;
     height: 5rem;
     list-style: none;
     display: flex;
@@ -132,6 +133,7 @@ $headerBurgerColor: #ffffff;
       position: absolute;
       top: 5rem;
       width: calc(100% - 5rem);
+      margin-left: 0;
     }
 
     &__show {
