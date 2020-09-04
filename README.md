@@ -1,5 +1,7 @@
 # PWA-den-valgfrie-opgave
 
+**JEG SKAL IKKE VÆRE WEB DESIGNER**
+
 [Csgo teams Website](https://pwa-csgo-teams.netlify.app/)
 
 > Appen består af **_sportsdata.io_** hvor man får info om hvilken Leagues, Hold og Holdmedlemmer
