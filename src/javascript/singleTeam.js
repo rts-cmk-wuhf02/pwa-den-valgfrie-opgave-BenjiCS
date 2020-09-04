@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       document.querySelector(".team__name").innerHTML = data[0].TeamName;
-      document.querySelector(".sub").innerHTML = `Do you want notification from ${data[0].TeamName}`;
+      document.querySelector(".sub").innerHTML = `Subscribe to ${data[0].TeamName} for news`;
       var counter = 0;
       data.forEach(function (team) {
         console.log(data);
