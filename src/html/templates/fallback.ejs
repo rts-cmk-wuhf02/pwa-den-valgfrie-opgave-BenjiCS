@@ -1,6 +1,14 @@
-<% include ../partials/head %>
-<% include ../partials/header %>
+<% include ../partials/head %> <% include ../partials/header %>
 <main class="main">
-    <p class="test">fallback!</p>
+  <div
+    class="fallback"
+    style="display: flex; align-items: center; flex-direction: column"
+  >
+    <h1 style="text-decoration: underline">You are offline</h1>
+    <h2 style="text-align: center">
+      I cant load this page becuse I need to me online
+    </h2>
+    <img src="/assets/images/offline.png" alt="offline" style="width: 100px" />
+  </div>
 </main>
 <% include ../partials/after-footer %>

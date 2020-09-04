@@ -15,6 +15,7 @@ let filesToCache = [
   "/assets/images/placeholderPlayer.png",
   "/assets/images/checkmark.png",
   "/assets/images/xmark.png",
+  "/assets/images/offline.png",
   "/assets/javascript/data.js",
   "/assets/javascript/header.js",
   "/assets/javascript/leagues.js",
