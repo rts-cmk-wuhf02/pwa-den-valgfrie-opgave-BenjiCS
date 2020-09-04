@@ -35,29 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <a href="/team?teamId=${playerData[5]}">
             <img src="/assets/images/placeholderGroup.png" alt="PlaceHolder For ${playerData[0]}" class="team__placeholder">          
           </a>
-          <a href="/team?teamId=${playerData[5]}" class="team__a">${playerData[0]}</a>
+          <a href="/team?teamId=${playerData[5]}" class="team__a">${playerData[0]} Click for more info</a>
         </div>`;
         return true;
       });
-    })
-    .catch((err) => console.log(err));
-
-  fetch(
-    `https://api.sportsdata.io/v3/csgo/scores/json/MembershipsByTeam/100000078?key=${key}`
-    // `https://api.sportsdata.io/v3/csgo/scores/json/Areas?key=${key}`
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((err) => console.log(err));
-
-  fetch(
-    `https://api.sportsdata.io/v3/csgo/scores/json/Player/100001378?key=${key}`
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
     })
     .catch((err) => console.log(err));
 });
