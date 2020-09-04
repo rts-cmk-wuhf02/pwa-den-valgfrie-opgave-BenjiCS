@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // console.log(counter);
         teamPassed[playerData[0]] = true;
         document.querySelector(".list").innerHTML += `
-        <div class="team">
+        <div class="team ${playerData[0].replace(/ /g, "")}">
           <a href="/team?teamId=${playerData[5]}">
             <img src="/assets/images/placeholderGroup.png" alt="PlaceHolder For ${playerData[0]}" class="team__placeholder">          
           </a>
