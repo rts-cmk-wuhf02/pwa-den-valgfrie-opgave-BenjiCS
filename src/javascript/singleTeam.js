@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   let params = new URLSearchParams(window.location.search);
   const category = params.get("teamId");
-    let key = "a5a4d5c58a0c4b919432efda878b0473";
-  // let key = "0680b02955df429a92dd6bdd50d42210";
+    // let key = "a5a4d5c58a0c4b919432efda878b0473";
+  let key = "0680b02955df429a92dd6bdd50d42210";
 
   fetch(
     `https://api.sportsdata.io/v3/csgo/scores/json/MembershipsByTeam/${category}?key=${key}`
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           })
           .catch((err) => console.log(err));
       });
+      document.querySelector(".Loading").remove();
     })
     .catch((err) => console.log(err));
 });

@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       });
+      document.querySelector(".Loading").remove();
     })
     .catch((err) => console.log(err));
 });

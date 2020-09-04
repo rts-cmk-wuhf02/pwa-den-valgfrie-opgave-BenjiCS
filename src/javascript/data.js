@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>`;
         return true;
       });
+      document.querySelector(".Loading").remove();
     })
     .catch((err) => console.log(err));
 });
