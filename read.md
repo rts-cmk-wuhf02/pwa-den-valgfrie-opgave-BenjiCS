@@ -1,6 +1,13 @@
 128B9B294C68167CE862F73C18F4EC3D
 
+Not working
+>key = "a5a4d5c58a0c4b919432efda878b0473"
+>key = "0680b02955df429a92dd6bdd50d42210"
+>key = "cd364a6f20f4496da85e714aa23cdf54"
+
 > Appen består af **_sportsdata.io_** hvor man får info om hvilken Leagues, Holdmedlemmer
+
+
 
 https://sportsdata.io/developers/api-documentation/csgo#/free
 

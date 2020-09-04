@@ -36,14 +36,14 @@ function watchHtml() {
 
 function copy(done) {
   gulp
-    .src(["src/**.js", "src/**.webmanifest"])
+    .src(["src/**.js", "src/**.webmanifest", "src/config.json"])
     .pipe(gulp.dest("dist"))
     .pipe(connect.reload());
   done();
 }
 
 function watchCopy() {
-  gulp.watch(["src/**.js", "src/**.webmanifest"], { ignoreInitial: false }, copy);
+  gulp.watch(["src/**.js", "src/**.webmanifest", "src/config.json"], { ignoreInitial: false }, copy);
 }
 
 function scss(done) {

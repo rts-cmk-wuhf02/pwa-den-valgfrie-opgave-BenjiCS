@@ -1,5 +1,11 @@
 # PWA-den-valgfrie-opgave
 
+> [Csgo teams Website](https://pwa-csgo-teams.netlify.app/)
+
+Hvis der ikke er noget data på siden så skal der en ny API key til og den kan du få hos *[sportsdata.io](sportsdata.io)* og du skal sætte den ind i config.json
+
+
+
 # Formål: 
 Opgaven har til formål at, demonstrere at **koncepterne fra PWA undervisningen** kan anvendes i praksis i fremstillingen at et produkt.
 
