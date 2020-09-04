@@ -1,0 +1,32 @@
+<% include ../partials/head %>
+<% include ../partials/header %>
+<main class="main">
+    <h1 class="title">Leagues!</h1>
+    <section class="leaguesList">
+        <h1 class="leaguesList__title">Matches that are started</h1>
+        <div class="leaguesList__matchesNow"></div>
+        <h1 class="leaguesList__title">Matches comming this month</h1>
+        <div class="leaguesList__matchesComming"></div>
+    </section>
+</main>
+
+<template id="leaguesList__matchesNow">
+    <div class="leaguesList__matchesNow-contaner">
+        <h3 class="leaguesList__matchesNow-Competition"></h3>
+        <h3 class="leaguesList__matchesNow-name"></h3>
+        <p class="leaguesList__matchesNow-startDate"></p>
+        <p class="leaguesList__matchesNow-endDate"></p>
+    </div>
+</template>
+
+<template id="leaguesList__matchesComming">
+    <div class="leaguesList__matchesComming-contaner">
+        <h3 class="leaguesList__matchesComming-Competition"></h3>
+        <h3 class="leaguesList__matchesComming-name"></h3>
+        <p class="leaguesList__matchesComming-startDate"></p>
+        <p class="leaguesList__matchesComming-endDate"></p>
+    </div>
+</template>
+
+<script src="/assets/javascript/leagues.js"></script>
+<% include ../partials/after-footer %>

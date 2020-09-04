@@ -1,0 +1,37 @@
+.title {
+  text-align: center;
+}
+
+.leaguesList__title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.leaguesList__matchesNow,
+.leaguesList__matchesComming {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.leaguesList__matchesNow-contaner,
+.leaguesList__matchesComming-contaner {
+  margin: 10px;
+  padding: 20px;
+  background: #525252;
+  border-radius: 5px;
+  width: 25%;
+}
+
+.leaguesList__matchesNow-span,
+.leaguesList__matchesComming-span {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 767px) {
+    .leaguesList__matchesNow-contaner,
+    .leaguesList__matchesComming-contaner {
+      width: 100%;
+    }
+}
