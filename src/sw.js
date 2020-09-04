@@ -14,7 +14,11 @@ let filesToCache = [
   "/assets/images/placeholderGroup.png",
   "/assets/images/placeholderPlayer.png",
   "/assets/images/checkmark.png",
-  "/assets/images/xmark.png"
+  "/assets/images/xmark.png",
+  "/assets/javascript/data.js",
+  "/assets/javascript/header.js",
+  "/assets/javascript/leagues.js",
+  "/assets/javascript/singleTeam.js",
 ];
 
 self.addEventListener("install", function (event) {
