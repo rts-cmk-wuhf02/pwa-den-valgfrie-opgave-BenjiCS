@@ -1,14 +1,16 @@
 # PWA-den-valgfrie-opgave
 
-> [Csgo teams Website](https://pwa-csgo-teams.netlify.app/)
+[Csgo teams Website](https://pwa-csgo-teams.netlify.app/)
 
-Hvis der ikke er noget data på siden så skal der en ny API key til og den kan du få hos _[sportsdata.io](sportsdata.io)_ og du skal sætte den ind i config.json
+> Appen består af **_sportsdata.io_** hvor man får info om hvilken Leagues, Hold og Holdmedlemmer
+
+> Hvis der ikke er noget data på siden så skal der en ny API key til og den kan du få hos _[sportsdata.io](sportsdata.io)_ og du skal sætte den ind i config.json
 
 **feature-liste**<br>
->Får alle hold  
->Får alle hold spiller info<br>
->Få notifikation fra holden
 
+> Får alle hold  
+> Får alle hold spiller info<br>
+> Få notifikation fra holden
 
 | **userflow**                      |
 | --------------------------------- |
