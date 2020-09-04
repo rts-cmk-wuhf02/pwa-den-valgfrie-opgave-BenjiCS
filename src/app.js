@@ -45,45 +45,50 @@ const category = params.get("teamId");
 
 //   let key = "a5a4d5c58a0c4b919432efda878b0473";
 let key = "0680b02955df429a92dd6bdd50d42210";
-fetch(
-  `https://api.sportsdata.io/v3/csgo/scores/json/MembershipsByTeam/${category}?key=${key}`
-  // `https://api.sportsdata.io/v3/csgo/scores/json/ActiveMemberships?key=${key}`
-)
-  .then((response) => response.json())
-  .then((data) => {
-    Notification.requestPermission(function (status) {
-      console.log("Notification permission status:", status);
-      if (Notification.permission == "granted") {
-        document
-          .querySelector(".sub")
-          .addEventListener("click", function (event) {
-            console.log(`Show notification message: "You now get notifications of ${data[0].TeamName}"`);
-            navigator.serviceWorker.getRegistration().then(function (reg) {
-              const title = data[0].TeamName;
-              var options = {
-                body: `You now get notifications of ${data[0].TeamName}`,
-                icon: "/assets/images/placeholderGroup.png",
-                vibrate: [200, 100, 200, 100, 200, 100, 400],
-                data: {
-                  dateOfArrival: Date.now(),
-                  primaryKey: 1,
-                },
-                actions: [
-                  {
-                    action: "close",
-                    title: "Close notification",
-                    icon: "/assets/images/xmark.png",
+if (category !== null) {
+  console.log(category)
+  fetch(
+    `https://api.sportsdata.io/v3/csgo/scores/json/MembershipsByTeam/${category}?key=${key}`
+    // `https://api.sportsdata.io/v3/csgo/scores/json/ActiveMemberships?key=${key}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      Notification.requestPermission(function (status) {
+        console.log("Notification permission status:", status);
+        if (Notification.permission == "granted") {
+          document
+            .querySelector(".sub")
+            .addEventListener("click", function (event) {
+              console.log(
+                `Show notification message: "You now get notifications of ${data[0].TeamName}"`
+              );
+              navigator.serviceWorker.getRegistration().then(function (reg) {
+                const title = data[0].TeamName;
+                var options = {
+                  body: `You now get notifications of ${data[0].TeamName}`,
+                  icon: "/assets/images/placeholderGroup.png",
+                  vibrate: [200, 100, 200, 100, 200, 100, 400],
+                  data: {
+                    dateOfArrival: Date.now(),
+                    primaryKey: 1,
                   },
-                ],
-              };
+                  actions: [
+                    {
+                      action: "close",
+                      title: "Close notification",
+                      icon: "/assets/images/xmark.png",
+                    },
+                  ],
+                };
 
-              reg.showNotification(title, options);
+                reg.showNotification(title, options);
+              });
             });
-          });
-      }
-    });
-  })
-  .catch((err) => console.log(err));
+        }
+      });
+    })
+    .catch((err) => console.log(err));
+}
 
 // let key = "a5a4d5c58a0c4b919432efda878b0473";
 // fetch(
