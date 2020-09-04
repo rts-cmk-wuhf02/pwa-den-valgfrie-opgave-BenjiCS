@@ -1,6 +1,6 @@
 128B9B294C68167CE862F73C18F4EC3D
 
-> Appen består af **_sportsdata.io_** hvor man får info om hvilken Leagues, Holdmedlemmer, Hvem var holdmedlem, Player stats
+> Appen består af **_sportsdata.io_** hvor man får info om hvilken Leagues, Holdmedlemmer
 
 https://sportsdata.io/developers/api-documentation/csgo#/free
 
